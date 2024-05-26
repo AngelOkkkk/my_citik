@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding:0;
+  cursor: url(http://cur.cursors-4u.net/cursors/cur-11/cur1021.ani),
+  url(http://cur.cursors-4u.net/cursors/cur-11/cur1021.png),
+  auto !important;
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: url(img/ib.png);
+}
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#795548; /*добавляем фон всему меню*/
+  height: 70px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#795548; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:70px; /*ровняем меню по вертикали*/
+  display: block;
+  border-right: 1px solid #c39382; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+a:hover {
+  background:#795548;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+.content{
+  width:70%;
+  height:auto;
+  margin-top:10%;
+  margin-left: 15%;
+  position: relative;
+  background: #795548;
+  border:10px solid #a47361;
+  border-radius: 30px;
+}
+p{
+  margin: 20px 20px 20px 20px;
+  color:white;
+  font-size: 30px;
+}
+h2{
+  margin: 20px 20px 20px 20px;
+  color:white;
+  font-size: 40px;
+  }
+
+.slider {
+  position: relative;
+  width: 680px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 680px;
+  height: 540px;
+  float: left;
+}
+
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-1360px);
+}
+
+
+
